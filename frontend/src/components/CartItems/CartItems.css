@@ -1,0 +1,301 @@
+/* CartItems.css */
+
+/* Main container for the cart items */
+.cartitems {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Formatting the header row (Product, Title, Price, etc.) */
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Styling for horizontal lines */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #eee;
+    margin: 15px 0;
+}
+
+/* Formatting each row for individual cart items */
+.cartitems-format {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #444;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Image styling for cart products */
+.carticon-product-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Quantity button styling */
+.cartitems-quantity {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    border-radius: 6px;
+    background-color: #fafafa;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    width: fit-content;
+}
+
+/* Remove icon styling */
+.cartitems-format img {
+    width: 40px;
+    height: 42px;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.cartitems-format img:hover {
+    transform: scale(1.15);
+    filter: brightness(0.8);
+}
+
+/* Cart totals section */
+.cartitems-down {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.cartitems-total {
+    width: 48%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cartitems-total h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cartitems-total-format {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 12px 0;
+}
+
+.cartitems-total-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.cartitems-total-item h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #222;
+}
+
+.cartitems-total button {
+    width: 100%;
+    padding: 12px;
+    background-color:rgb(248, 180, 96);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.cartitems-total button:hover {
+    background-color:rgb(248, 180, 96);
+}
+
+/* Promo code section */
+.cartitems-prmocode {
+    width: 48%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartitems-prmocode p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.cartitems-promobox {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cartitems-promobox input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.cartitems-promobox button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+.cartitems-promobox button:hover {
+    background-color: #0056b3;
+}
+.cartitems-down {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light background for the total section */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.cartitems-total {
+    margin-bottom: 20px;
+}
+
+.cartitems-total h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    /* Darker text color for better visibility */
+}
+
+.cartitems-total-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    /* Spacing between items */
+    border-bottom: 1px solid #e2e2e2;
+    /* Separator line */
+}
+
+.cartitems-total-items p {
+    font-size: 18px;
+    color: #555;
+    /* Lighter text for subtotals */
+}
+
+.cartitems-total-items h3 {
+    font-size: 20px;
+    color: #333;
+    /* Darker color for total */
+}
+
+button {
+    padding: 12px 20px;
+    /* Button padding */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #007bff;
+    /* Primary button color */
+    color: white;
+    /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    /* Pointer on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover */
+    margin-top: 10px;
+    /* Margin above button */
+}
+/* 
+button:hover {
+    background-color: #0056b3;
+    
+} */
+
+.cartitems-promocode {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    /* White background for promo box */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.cartitems-promocode p {
+    margin-bottom: 10px;
+    /* Spacing below the paragraph */
+    font-size: 16px;
+    color: #333;
+}
+
+.cartitems-promobox {
+    display: flex;
+    /* Align input and button in a row */
+    gap: 10px;
+    /* Spacing between input and button */
+}
+
+.cartitems-promobox input {
+    flex: 1;
+    /* Allow input to take available space */
+    padding: 10px;
+    /* Padding for input */
+    border: 2px solid #e2e2e2;
+    /* Light border */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+}
+
+.cartitems-promobox button {
+    background-color: rgb(248, 180, 96);
+    /* Green button color */
+}
+
+.cartitems-promobox button:hover {
+    background-color:rgb(248, 180, 96);
+    /* Darker shade on hover */
+}

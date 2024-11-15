@@ -1,0 +1,23 @@
+.breadcrum {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrum img {
+    margin: 0 10px; /* Space between images and text */
+  }
+  
+  .breadcrum span {
+    color: #007bff; /* Color for the breadcrumb text */
+    cursor: pointer; /* Change cursor to pointer for clickable text */
+  }
+  
+  .breadcrum span:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

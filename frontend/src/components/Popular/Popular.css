@@ -1,0 +1,61 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    height: 80vh; /* Set height to 80% of the viewport height */
+    justify-content: center; /* Center the content vertically */
+    overflow: hidden; /* Prevent overflow to remove scroll bar */
+}
+
+.popular h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular-item {
+    margin-top: 20px; /* Adjusted margin for better spacing */
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    gap: 10px; /* Increased gap for better spacing */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+/* Style for individual images */
+.popular-item img {
+    width: 200px;  /* Fixed width for all images */
+    height: 200px;  /* Fixed height for all images */
+    object-fit: cover;  /* Ensures the image fills the space without distortion */
+    border-radius: 10px;  /* Optional: adds rounded corners to the images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the image */
+.popular-item img:hover {
+    transform: scale(1.05);  /* Slightly enlarge the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Add a shadow on hover */
+}
+
+.hr {
+    width: 200px;
+}
+
+/* Ensures images stay in a single row and do not wrap */
+.popular-item {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide any overflow to prevent scroll */
+    width: 100%; /* Make sure it uses full width */
+}
+
+/* This will force the item container to stay within the bounds */
+.popular {
+    overflow: hidden; /* Hide overflow from the main container as well */
+}

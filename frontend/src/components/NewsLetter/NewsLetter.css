@@ -1,0 +1,100 @@
+.newsletter {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin: auto;
+    padding: 0 40px; /* Reduced padding for better alignment */
+    background: linear-gradient(180deg, rgb(253, 225, 203) 0%, white 60%);
+    gap: 25px; /* Unified gap */
+    border-radius: 3px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.newsletter h1 {
+    font-size: 2.5em; /* Use responsive font size */
+    color: #171717;
+    font-weight: 600;
+    text-align: center; /* Center align text */
+}
+
+.newsletter p {
+    font-size: 1.2em;
+    color: #171717;
+    text-align: center; /* Center align text */
+    margin-bottom: 10px; /* Add a bit of space between paragraph and input */
+}
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 50px; /* Smoother, more modern border radius */
+    width: 100%; /* Make the div responsive */
+    max-width: 730px;
+    height: 60px; /* Slightly reduced height */
+    border: 1px solid rgb(218, 215, 213);
+    padding: 0 10px; /* Added padding for better spacing inside the div */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.newsletter input {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #171717;
+    font-family: 'Poppins', sans-serif;
+    background: none; /* Make background transparent */
+    padding: 0 10px; /* Added padding for text input */
+}
+
+.newsletter div button {
+    width: 200px;
+    height: 50px; /* Reduced button height for better proportion */
+    border-radius: 50px;
+    background: black;
+    color: white;
+    font-size: 16px; /* Increased font size for better readability */
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease; /* Smooth hover transition */
+}
+
+.newsletter div button:hover {
+    background: #333; /* Darken the button on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .newsletter {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .newsletter h1 {
+        font-size: 2em;
+    }
+
+    .newsletter div {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .newsletter input {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .newsletter div button {
+        width: 100%;
+    }
+}

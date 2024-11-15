@@ -1,0 +1,158 @@
+/* Main Container for Related Products */
+.relatedproducts {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+/* Heading Style */
+.relatedproducts h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Horizontal Line */
+.relatedproducts hr {
+    border: 1px solid #e0e0e0;
+    margin: 10px 0 20px;
+}
+
+/* Container for Related Product Items */
+.relatedproducts-item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+/* Individual Product Item */
+.relatedproducts-item .item {
+    flex: 0 0 auto;
+    width: 120px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Product Image */
+.item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Scale Image on Hover */
+.item img:hover {
+    transform: scale(1.05);
+}
+
+/* Product Name */
+.item h2 {
+    font-size: 12px;
+    margin: 8px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Pricing Styles */
+.item .price {
+    font-size: 12px;
+    color: #e63946;
+}
+
+/* Old Price Style */
+.item .old-price {
+    font-size: 10px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+/* Responsive Styles */
+@media (min-width: 480px) {
+    .relatedproducts {
+        padding: 20px;
+    }
+
+    .relatedproducts h1 {
+        font-size: 22px;
+    }
+
+    .relatedproducts-item {
+        gap: 15px;
+    }
+
+    .relatedproducts-item .item {
+        width: 140px;
+    }
+
+    .item img {
+        height: 140px;
+    }
+
+    .item h2 {
+        font-size: 14px;
+    }
+
+    .item .price {
+        font-size: 14px;
+    }
+
+    .item .old-price {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .relatedproducts {
+        max-width: 720px;
+    }
+
+    .relatedproducts h1 {
+        font-size: 24px;
+    }
+
+    .relatedproducts-item {
+        justify-content: center;
+    }
+
+    .relatedproducts-item .item {
+        width: 160px;
+    }
+
+    .item img {
+        height: 160px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .relatedproducts {
+        max-width: 960px;
+    }
+
+    .relatedproducts-item {
+        justify-content: flex-start;
+    }
+
+    .relatedproducts-item .item {
+        width: 180px;
+    }
+
+    .item img {
+        height: 180px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .relatedproducts {
+        max-width: 1140px;
+    }
+}

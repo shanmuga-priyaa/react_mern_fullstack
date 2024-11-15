@@ -1,0 +1,69 @@
+/* Default styling for larger screens */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and profile */
+    padding: 1px 50px;
+    height: 70px; /* Fixed height for the navbar */
+    background-color: white;
+    margin-bottom: 1px;
+    box-shadow: 0 1px 3px -2px #000;
+}
+.h4{
+    align-content: center;
+}
+
+.nav-logo {
+    height: 40px; /* Default logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.nav-profile {
+    height: 40px; /* Default profile image height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Centering the admin panel title */
+.admin-panel {
+    flex: 1; /* Allow this item to take available space */
+    text-align: center; /* Center the text */
+    font-size: 20px; /* Font size for the admin panel */
+}
+
+/* Medium screens (e.g., tablets) */
+@media (max-width: 768px) {
+    .navbar {
+        height: 60px; /* Reduce navbar height */
+        padding: 1px 10px; /* Reduce padding */
+    }
+
+    .nav-logo,
+    .nav-profile {
+        height: 35px; /* Reduce logo and profile image size */
+    }
+
+    .admin-panel {
+        font-size: 18px; /* Adjust font size for medium screens */
+    }
+}
+
+/* Mobile screens only (e.g., max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow navbar to grow with content */
+        padding: 1px 5px; /* Reduce padding */
+        align-items: center; /* Center items horizontally */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .nav-logo,
+    .nav-profile {
+        height: 30px; /* Reduce logo and profile image size */
+    }
+
+    .admin-panel {
+        font-size: 16px; /* Smaller font size for mobile */
+        margin: 5px 0; /* Adjust margin for spacing */
+    }
+}

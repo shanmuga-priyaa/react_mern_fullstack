@@ -1,0 +1,53 @@
+.item {
+    width: 100%; /* Set to 100% for responsiveness */
+    max-width: 350px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the item */
+}
+
+.item p {
+    margin: 6px 0px;
+}
+
+.item-prices {
+    display: flex;
+    gap: 4px;
+}
+
+.item-price-new {
+    color: #374151;
+    font-weight: 600; /* Corrected to use a single weight */
+}
+.item img{
+    height: 150px;
+    width: 150px;
+
+}
+
+.item-price-old {
+    color: #8c8c8c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* For tablets and smaller devices */
+    .item {
+        max-width: 90%; /* Allow more width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+    .item {
+        max-width: 100%; /* Use full width on mobile */
+        padding: 10px; /* Optional: Add some padding */
+    }
+
+    .item-price-new, .item-price-old {
+        font-size: 16px; /* Adjust font size for readability */
+    }
+}
